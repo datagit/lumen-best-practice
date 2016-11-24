@@ -47,7 +47,7 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $e)
     {
-        if($e instanceof MyException) {
+        /*if($e instanceof MyException) {
             return $e->returnResponse();
         } else {
             
@@ -62,7 +62,7 @@ class Handler extends ExceptionHandler
             } else {
                 return $myException->errorResponse($e, null, []);
             }
-        }
+        }*/
 
         return parent::render($request, $e);
     }
